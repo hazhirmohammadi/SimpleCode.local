@@ -1,0 +1,70 @@
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    height: 2000px;
+    background: #525252;
+}
+
+.container {
+    width: 1200px;
+}
+
+header.sticky {
+    background: rgba(162, 162, 162, 0.91);
+    padding: 5px 0;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    padding: 40px 0;
+    transition: all .3s ease-in-out;
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header nav ul {
+    display: flex;
+
+    list-style: none;
+}
+
+header nav ul li {
+    margin: 0 0 0 15px;
+    padding: 5px;
+}
+
+header nav ul li:hover {
+    background: rgba(3, 204, 3, 0.46);
+    border-radius: 5px;
+}
+
+header nav ul a {
+    display: flex;
+}
+
+header a {
+    font-size: 17px;
+    color: white;
+    text-decoration: none;
+    font-weight: 950;
+}
+
+.banner {
+    width: 100%;
+    height: 100vh;
+    background: url("../img/1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}

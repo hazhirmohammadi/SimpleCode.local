@@ -1,0 +1,121 @@
+﻿@font-face {
+    font-family: 'vazir';
+    src: url('../fonts/vazir.eot') format('eot'),
+    url('../fonts/vazir.ttf') format('truetype'),
+    url('../fonts/vazir.woff') format('woff'),
+    url('../fonts/vazir.woff2') format('woff2');
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'vazir', serif;
+    height: 100vh;
+    overflow-x: hidden;
+}
+
+
+header {
+    background: #151581;
+    height: 200px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    color: white;
+}
+
+header p {
+    width: 900px;
+    text-align: center;
+    font-size: 14px;
+    line-height: 25px;
+}
+
+.content {
+    width: 900px;
+    margin: 50px auto;
+    font-size: 17px;
+}
+
+.content p {
+
+}
+
+.sidebar {
+    height: 100vh;
+    position: absolute;
+    left: -250px;
+    top: 0;
+    width: 250px;
+    background: #0c0c4b;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 0;
+    transition: left .4s ease-in-out;
+    visibility: hidden;
+}
+.sidebar.active{
+   left: 0;
+}
+
+.sidebar .btn{
+    visibility:visible ;
+}
+.sidebar img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.sidebar ul {
+    list-style: none;
+    margin: 50px auto;
+    width: 100%;
+}
+
+.sidebar ul li {
+    text-align: center;
+    border-bottom: 1px solid gray;
+    border-top: 1px solid gray;
+    transition: background .3s ease-in-out;
+}
+
+.sidebar ul li:hover {
+    background: #373788;
+}
+
+.sidebar ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 0;
+    display: block;
+    cursor: pointer;
+}
+
+.sidebar .btn {
+    position: absolute;
+    right: -40px;
+    top: 20px;
+    cursor: pointer;
+    background: rgba(60, 101, 232, 0.53);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.sidebar .btn svg {
+    color: white;
+    font-size: 20px;
+    animation: fa-spin 4s infinite linear;
+}
